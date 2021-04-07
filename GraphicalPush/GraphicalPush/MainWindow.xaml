@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicalPush"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" x:Class="GraphicalPush.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        Loaded="Window_Loaded">
+    <Grid x:Name="RootGrid">
+        <dxc:ChartControl HorizontalAlignment="Left" Margin="0,0,-0.4,0" VerticalAlignment="Top" Name="PushChart">
+            <dxc:ChartControl.Legends>
+                <dxc:Legend/>
+            </dxc:ChartControl.Legends>
+            <dxc:XYDiagram2D x:Name="Diagram">
+                <dxc:BarSideBySideSeries2D x:Name="Bars" DisplayName="Series 1"/>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl>
+
+    </Grid>
+</Window>
